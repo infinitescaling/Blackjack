@@ -1,4 +1,4 @@
 Blackjack
 =========
 
-Ruby script tok
+Ruby script to play Blackjack
