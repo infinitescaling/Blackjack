@@ -34,15 +34,12 @@ deck.shuffle!
 puts "User hand: "
 print user_hand
 puts 
-puts "Deck: "
-print deck
-puts 
 
 while(true) do
 
-    #convert user_hand to aces last
-    user_hand.sort_by{|x| x.to_i x != 0 ? x : x[0] - 81}.reverse.inject(0) do |c, x|
-    end
+    #convert user_hand to aces last hack
+    #I thought this up myself I'm so smart.
+    user_hand.sort!{|x,y| x.ord <=> y.ord}
 
     puts user_hand
 
