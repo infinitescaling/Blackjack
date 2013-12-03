@@ -105,11 +105,12 @@ while(true) do
         puts "Dealer hand #{dealer_hand}        Dealer value #{dealer_value}"
         puts dealer_value
     else
-        #print out dealer's first card
-        puts "Dealer hand " + dealer_hand[1] + "             Dealer hand value: #{dealer_value}"
+        #print out dealer's first card + temp value
+        #
         temp = []
         temp << dealer_hand[1]
         temp_value = calculate_value(temp)
+        puts "Dealer hand " + dealer_hand[1] + "             Dealer hand value: #{temp_value}"
     end
 
 
